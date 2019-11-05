@@ -161,7 +161,7 @@ export class GitHubActions implements CISource {
   }
 
   get useEventDSL() {
-    return this.event.pull_request !== undefined || this.event.issue !== undefined
+    return this.event.pull_request === undefined || this.event.issue === undefined
   }
 
   get pullRequestID(): string {
