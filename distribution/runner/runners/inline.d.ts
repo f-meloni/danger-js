@@ -1,13 +1,13 @@
-import { DangerResults } from "../../dsl/DangerResults";
-import { DangerContext } from "../../runner/Dangerfile";
-import { DangerRunner } from "./runner";
+import { DangerResults } from "../../dsl/DangerResults"
+import { DangerContext } from "../../runner/Dangerfile"
+import { DangerRunner } from "./runner"
 /**
  * Executes a Dangerfile at a specific path, with a context.
  * The values inside a Danger context are applied as globals to the Dangerfiles runtime.
  *
  * @param {DangerContext} dangerfileContext the global danger context
  */
-export declare function createDangerfileRuntimeEnvironment(dangerfileContext: DangerContext): Promise<DangerContext>;
+export declare function createDangerfileRuntimeEnvironment(dangerfileContext: DangerContext): Promise<DangerContext>
 /**
  * Executes a Dangerfile at a specific path, with a context.
  * The values inside a Danger context are applied as globals to the Dangerfiles runtime.
@@ -19,6 +19,12 @@ export declare function createDangerfileRuntimeEnvironment(dangerfileContext: Da
  * @param {func | undefined} moduleHandler an optional func for handling module resolution
  * @returns {DangerResults} the results of the run
  */
-export declare const runDangerfileEnvironment: (filenames: string[], originalContents: (string | undefined)[] | undefined, environment: DangerContext, injectedObjectToExport?: any, moduleHandler?: ((module: any, filename: string) => string | Promise<any>) | undefined) => Promise<DangerResults>;
-declare const defaultExport: DangerRunner;
-export default defaultExport;
+export declare const runDangerfileEnvironment: (
+  filenames: string[],
+  originalContents: (string | undefined)[] | undefined,
+  environment: DangerContext,
+  injectedObjectToExport?: any,
+  moduleHandler?: ((module: any, filename: string) => string | Promise<any>) | undefined
+) => Promise<DangerResults>
+declare const defaultExport: DangerRunner
+export default defaultExport
