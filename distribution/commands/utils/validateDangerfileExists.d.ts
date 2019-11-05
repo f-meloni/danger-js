@@ -1,2 +1,2 @@
-declare const validateDangerfileExists: (filePath: string) => boolean
-export default validateDangerfileExists
+declare const validateDangerfileExists: (filePath: string) => boolean;
+export default validateDangerfileExists;

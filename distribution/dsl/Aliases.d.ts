@@ -1,1 +1,1 @@
-export declare type MarkdownString = string
+export declare type MarkdownString = string;

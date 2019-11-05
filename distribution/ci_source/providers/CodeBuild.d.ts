@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * CI Setup
  *
@@ -10,14 +10,14 @@ import { Env, CISource } from "../ci_source"
  *
  */
 export declare class CodeBuild implements CISource {
-  private readonly env
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
-  readonly repoURL: string
-  private _isPRRequest
-  private _prParseUrl
+    private readonly env;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
+    readonly repoURL: string;
+    private _isPRRequest;
+    private _prParseUrl;
 }

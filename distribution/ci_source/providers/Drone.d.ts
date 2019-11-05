@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  *
  *  ### CI Setup
@@ -20,11 +20,11 @@ import { Env, CISource } from "../ci_source"
  *  is to pass in the token as a prefix to the command `DANGER_GITHUB_API_TOKEN="123" yarn danger ci`.
  */
 export declare class Drone implements CISource {
-  private readonly env
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
+    private readonly env;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
 }

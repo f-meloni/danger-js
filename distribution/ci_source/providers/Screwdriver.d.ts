@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * ### CI Setup
  *
@@ -21,13 +21,13 @@ import { Env, CISource } from "../ci_source"
  * [build secret](https://docs.screwdriver.cd/user-guide/configuration/secrets)
  */
 export declare class Screwdriver implements CISource {
-  private readonly env
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  private _parseRepoURL
-  readonly pullRequestID: string
-  readonly repoSlug: string
-  readonly ciRunURL: string | undefined
+    private readonly env;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    private _parseRepoURL;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
+    readonly ciRunURL: string | undefined;
 }

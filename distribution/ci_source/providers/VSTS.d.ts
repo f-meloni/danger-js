@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * ### CI Setup
  *
@@ -12,11 +12,11 @@ import { Env, CISource } from "../ci_source"
  *  You need to add the `DANGER_GITHUB_API_TOKEN` environment variable
  */
 export declare class VSTS implements CISource {
-  private readonly env
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
+    private readonly env;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
 }

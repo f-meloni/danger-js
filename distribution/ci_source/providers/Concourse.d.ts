@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * Concourse CI Integration
  *
@@ -28,12 +28,12 @@ import { Env, CISource } from "../ci_source"
  *  The suggested method of storing the token is within the vault - https://concourse-ci.org/creds.html
  */
 export declare class Concourse implements CISource {
-  private readonly env
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
-  readonly ciRunURL: any
+    private readonly env;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
+    readonly ciRunURL: any;
 }

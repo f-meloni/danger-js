@@ -4,4 +4,4 @@
  *
  * Will throw if it isn't found.
  */
-export declare function dangerfilePath(program: any): string
+export declare function dangerfilePath(program: any): string;

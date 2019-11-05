@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * ### CI Setup
  *
@@ -54,12 +54,12 @@ import { Env, CISource } from "../ci_source"
  *  If you have an open source project, you should ensure "Display value in build log" enabled, so that PRs from forks work.
  */
 export declare class Travis implements CISource {
-  private readonly env
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
-  readonly ciRunURL: string
+    private readonly env;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
+    readonly ciRunURL: string;
 }

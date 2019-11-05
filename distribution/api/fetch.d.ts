@@ -1,4 +1,4 @@
-import * as node_fetch from "node-fetch"
+import * as node_fetch from "node-fetch";
 /**
  * Adds retry handling to fetch requests
  *
@@ -6,10 +6,7 @@ import * as node_fetch from "node-fetch"
  * @param {fetch.RequestInit} [init] the usual options
  * @returns {Promise<fetch.Response>} network-y promise
  */
-export declare function retryableFetch(
-  url: string | node_fetch.Request,
-  init: node_fetch.RequestInit
-): Promise<node_fetch.Response>
+export declare function retryableFetch(url: string | node_fetch.Request, init: node_fetch.RequestInit): Promise<node_fetch.Response>;
 /**
  * Adds logging to every fetch request if a global var for `verbose` is set to true
  *
@@ -17,8 +14,4 @@ export declare function retryableFetch(
  * @param {fetch.RequestInit} [init] the usual options
  * @returns {Promise<fetch.Response>} network-y promise
  */
-export declare function api(
-  url: string | node_fetch.Request,
-  init: node_fetch.RequestInit,
-  suppressErrorReporting?: boolean
-): Promise<node_fetch.Response>
+export declare function api(url: string | node_fetch.Request, init: node_fetch.RequestInit, suppressErrorReporting?: boolean): Promise<node_fetch.Response>;

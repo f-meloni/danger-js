@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * ### CI Setup
  *
@@ -129,13 +129,13 @@ import { Env, CISource } from "../ci_source"
  *
  */
 export declare class GitHubActions implements CISource {
-  private readonly env
-  private event
-  constructor(env: Env)
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly useEventDSL: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
+    private readonly env;
+    private event;
+    constructor(env: Env);
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly useEventDSL: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
 }

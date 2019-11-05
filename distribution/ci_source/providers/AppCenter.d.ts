@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * ### CI Setup
  *
@@ -19,14 +19,14 @@ import { Env, CISource } from "../ci_source"
  *
  */
 export declare class AppCenter implements CISource {
-  private readonly env
-  private default
-  constructor(env: Env)
-  setup(): Promise<any>
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
-  private readonly branchName
+    private readonly env;
+    private default;
+    constructor(env: Env);
+    setup(): Promise<any>;
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
+    private readonly branchName;
 }

@@ -1,1 +1,1 @@
-export declare const getRepoSlug: () => any
+export declare const getRepoSlug: () => any;

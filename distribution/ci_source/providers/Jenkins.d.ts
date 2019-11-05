@@ -1,4 +1,4 @@
-import { Env, CISource } from "../ci_source"
+import { Env, CISource } from "../ci_source";
 /**
  * ### CI Setup
  * Ah Jenkins, so many memories. So, if you're using Jenkins, you're hosting your own environment.
@@ -30,14 +30,14 @@ import { Env, CISource } from "../ci_source"
  * As you own the machine, it's up to you to add the environment variable for the code review platform.
  */
 export declare class Jenkins implements CISource {
-  private readonly env
-  constructor(env: Env)
-  private isJenkins
-  readonly name: string
-  readonly isCI: boolean
-  readonly isPR: boolean
-  readonly pullRequestID: string
-  readonly repoSlug: string
-  readonly ciRunURL: string | undefined
-  readonly commitHash: string
+    private readonly env;
+    constructor(env: Env);
+    private isJenkins;
+    readonly name: string;
+    readonly isCI: boolean;
+    readonly isPR: boolean;
+    readonly pullRequestID: string;
+    readonly repoSlug: string;
+    readonly ciRunURL: string | undefined;
+    readonly commitHash: string;
 }

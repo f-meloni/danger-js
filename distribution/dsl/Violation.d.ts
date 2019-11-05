@@ -3,13 +3,13 @@
  * expansion later.
  */
 export interface Violation {
-  /** The string representation */
-  message: string
-  /** Optional path to the file */
-  file?: string
-  /** Optional line in the file */
-  line?: number
-  /** Optional icon for table (Only valid for messages) */
-  icon?: string
+    /** The string representation */
+    message: string;
+    /** Optional path to the file */
+    file?: string;
+    /** Optional line in the file */
+    line?: number;
+    /** Optional icon for table (Only valid for messages) */
+    icon?: string;
 }
-export declare const isInline: (violation: Violation) => boolean
+export declare const isInline: (violation: Violation) => boolean;
